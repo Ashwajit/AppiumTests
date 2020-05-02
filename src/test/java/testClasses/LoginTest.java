@@ -20,7 +20,7 @@ public class LoginTest extends BaseClass {
 
   @Test
 public void Tests()  {
-    JavaUtilities.sleep(1);
+    JavaUtilities.sleep(2);
     driver.findElement(MobileBy.AccessibilityId("Main navigation, open")).click();
 }
 
