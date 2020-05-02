@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="EbayTest Suite">
+  <test name="EbayTests">
+    <classes>
+   <class name="testClasses.LoginTest"/>
+<!--      <class name="testClasses.ItemSearchTest"/>-->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

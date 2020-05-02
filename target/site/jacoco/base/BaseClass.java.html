@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>BaseClass.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">AppiumServer</a> &gt; <a href="index.source.html" class="el_package">base</a> &gt; <span class="el_source">BaseClass.java</span></div><h1>BaseClass.java</h1><pre class="source lang-java linenums">package base;
+
+import constants.Constants;
+import io.appium.java_client.MobileBy;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.remote.AndroidMobileCapabilityType;
+import io.appium.java_client.remote.MobileCapabilityType;
+import java.net.MalformedURLException;
+import java.net.URL;
+import org.apache.log4j.Logger;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+
+<span class="fc" id="L15">public class BaseClass {</span>
+
+  private AndroidDriver driver;
+<span class="fc" id="L18">  static Logger logger = Logger.getLogger(BaseClass.class);</span>
+
+
+  @BeforeMethod
+  public void baseSetUp() throws MalformedURLException {
+<span class="fc" id="L23">    Constants cont = new Constants();</span>
+<span class="fc" id="L24">    DesiredCapabilities cap = new DesiredCapabilities();</span>
+<span class="fc" id="L25">    cap.setCapability(MobileCapabilityType.DEVICE_NAME, &quot;random&quot;);</span>
+<span class="fc" id="L26">    logger.info(&quot;Device name is set as Random&quot;);</span>
+<span class="fc" id="L27">    cap.setCapability(MobileCapabilityType.PLATFORM_NAME, &quot;Android&quot;);</span>
+<span class="fc" id="L28">    cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, &quot;R&quot;);</span>
+<span class="fc" id="L29">    cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, &quot;UIAutomator2&quot;);</span>
+    //cap.setCapability(MobileCapabilityType.APP, Constants.slash+&quot;Users&quot;+ Constants.slash+&quot;ashwajitthukral&quot;+ Constants.slash+&quot;AshwajitThukral&quot;+ Constants.slash+&quot;Tools&quot;+ Constants.slash+&quot;Ash AppiumProjects&quot;+ Constants.slash+&quot;AndroidProjects&quot;+ Constants.slash+&quot;AppiumServer&quot;+ Constants.slash+&quot;data&quot;+ Constants.slash+&quot;ebay.apk&quot;);
+<span class="fc" id="L31">    cap.setCapability(MobileCapabilityType.APP, cont.slash+&quot;Users&quot;+ cont.slash+&quot;ashwajitthukral&quot;+ cont.slash+&quot;AshwajitThukral&quot;+ cont.slash+&quot;Tools&quot;+ cont.slash+&quot;Ash AppiumProjects&quot;+ cont.slash+&quot;AndroidProjects&quot;+ cont.slash+&quot;AppiumServer&quot;+ cont.slash+&quot;data&quot;+ cont.slash+&quot;ebay.apk&quot;);</span>
+<span class="fc" id="L32">    cap.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, &quot;com.ebay.mobile&quot;);</span>
+<span class="fc" id="L33">    cap.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, &quot;.activities.MainActivity&quot;);</span>
+
+
+    // Below capabilities are for invoking mobile website
+    // cap.setCapability(MobileCapabilityType.BROWSER_NAME, &quot;Chrome&quot;);
+    // cap.setCapability(AndroidMobileCapabilityType.CHROMEDRIVER_EXECUTABLE,&quot;/Users/ashwajitthukral/AshwajitThukral/Tools/Ash AppiumProjects/AndroidProjects/AppiumServer/Mobile browser drivers/chromedriver&quot;);
+
+    //Below capabilities already  set thru AppiumServiceBuilder
+    // cap.setCapability(MobileCapabilityType.UDID,&quot;emulator-5554&quot;);
+    // cap.setCapability(MobileCapabilityType.FULL_RESET,false);
+    // cap.setCapability(MobileCapabilityType.NO_RESET,true);
+
+<span class="fc" id="L45">    driver = new AndroidDriver(new URL(Server.getServerUrl()), cap);</span>
+<span class="fc" id="L46">    System.out.println(driver.getSessionId());</span>
+
+    // driver.get(&quot;https://www.ebay.com&quot;);
+    // System.out.println(driver.getTitle());
+
+<span class="fc" id="L51">  }</span>
+
+  public AndroidDriver getDriver()
+  {
+<span class="fc" id="L55">    return driver;</span>
+  }
+
+  @AfterMethod
+  public void stopServer()
+  {
+<span class="fc" id="L61">    Server.stopServer();</span>
+<span class="fc" id="L62">    logger.info(&quot;Appium Server Stopped Successfully&quot;);</span>
+
+<span class="fc" id="L64">  }</span>
+
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>
