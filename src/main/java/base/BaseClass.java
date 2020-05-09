@@ -2,7 +2,6 @@ package base;
 
 import constants.Constants;
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileBy;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
@@ -19,16 +18,15 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
 import utilities.JavaUtilities;
-import utilities.jsonReader;
+import utilities.JsonReader;
 
 public class BaseClass {
 
   private AppiumDriver driver;
   private static  Logger logger = Logger.getLogger(BaseClass.class);
- // private String platformOs ="android";
-  private String platformOs ="iOS";
+  private String platformOs ="android";
+ // private String platformOs ="iOS";
   public DesiredCapabilities getAndroidCapabilities(){
     DesiredCapabilities caps = new DesiredCapabilities();
     caps.setCapability(MobileCapabilityType.DEVICE_NAME, "Random");
@@ -36,10 +34,10 @@ public class BaseClass {
     caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
     caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "9.0");
     //caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UIAutomator2");
-    caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, jsonReader.getAutomationNameFromJson());
+    caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, JsonReader.getAutomationNameFromJson());
     //cap.setCapability(AndroidMobileCapabilityType.AVD,"Nexus_6_API_29");
-    caps.setCapability(AndroidMobileCapabilityType.AVD,jsonReader.getAvdFromJson());
-    caps.setCapability(MobileCapabilityType.APP, Constants.slash+"Users"+ Constants.slash+"ashwajitthukral"+ Constants.slash+"AshwajitThukral"+ Constants.slash+"Tools"+ Constants.slash+"Ash AppiumProjects"+ Constants.slash+"AndroidProjects"+ Constants.slash+"AppiumServer"+ Constants.slash+"data"+ Constants.slash+"ebay.apk");
+    caps.setCapability(AndroidMobileCapabilityType.AVD, JsonReader.getAvdFromJson());
+    caps.setCapability(MobileCapabilityType.APP, Constants.slash+"Users"+ Constants.slash+"ashwajitthukral"+ Constants.slash+"AshwajitThukral"+ Constants.slash+"Tools"+ Constants.slash+"AshAppiumProjects"+ Constants.slash+"AndroidProjects"+ Constants.slash+"AppiumServer"+ Constants.slash+"data"+ Constants.slash+"ebay.apk");
     //caps.setCapability(MobileCapabilityType.APP, "/Users/ashwajitthukral/AshwajitThukral/Tools/Ash AppiumProjects/AndroidProjects/PassingAppiumDriver/data/ebay.apk");
     caps.setCapability(AndroidMobileCapabilityType.AVD, "Nexus_6_API_29");
     caps.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.ebay.mobile");
@@ -63,7 +61,7 @@ public class BaseClass {
     caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "iOS");
     caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "13.4.1");
     caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "XCUITest");
-    //caps.setCapability(MobileCapabilityType.APP, "/Users/ashwajitthukral/AshwajitThukral/Tools/Ash AppiumProjects/AndroidProjects/PassingAppiumDriver/data/ebay.apk");
+    //caps.setCapability(MobileCapabilityType.APP, "/Users/ashwajitthukral/AshwajitThukral/Tools/AshAppiumProjects/AndroidProjects/PassingAppiumDriver/data/ebay.apk");
     caps.setCapability(MobileCapabilityType.UDID,"0603b00b9e3260be7ff337c054ed519c30922993");
     caps.setCapability(IOSMobileCapabilityType.BUNDLE_ID,"com.cambly.Cambly");
     //caps.setCapability("derivedDataPath","/Users/ashwajitthukral/Library/Developer/Xcode/DerivedData/WebDriverAgent-ciegwgvxzxdrqthilmrmczmqvrgu");
@@ -75,16 +73,16 @@ public class BaseClass {
   // udid = idevice_id -l
   //bundleId = ideviceinstaller -u <udid> -l
   //ideviceinstaller -u <udid> -i <app path> (Installation of App)
-@Test
-public void iosPredicateStringTest(){
-  //  JavaUtilities.sleep(5);
-  //  driver.findElement(MobileBy.iOSNsPredicateString("value =='Continue with email'")).click();
- // JavaUtilities.sleep(10);
 
-  driver.findElement(MobileBy.iOSClassChain("**/XCUIElementTypeButton[`name BEGINSWITH \"Continue with Apple\"`]")).click();
-  JavaUtilities.sleep(10);
+//@Test
+//public void iosPredicateStringTest(){
+//  //  JavaUtilities.sleep(5);
+//  //  driver.findElement(MobileBy.iOSNsPredicateString("value =='Continue with email'")).click();
+// // JavaUtilities.sleep(10);
+//
+//  driver.findElement(MobileBy.iOSClassChain("**/XCUIElementTypeButton[`name BEGINSWITH \"Continue with Apple\"`]")).click();
+//  JavaUtilities.sleep(10);}
 
-}
 
   @BeforeMethod
   public void setUp(ITestResult iTestResult ) {

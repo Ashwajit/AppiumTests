@@ -7,11 +7,11 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-public class jsonReader {
+public class JsonReader {
 
   public static JSONObject jsonFile() {
 
-    String filePath = "/Users/ashwajitthukral/AshwajitThukral/Tools/Ash AppiumProjects/AndroidProjects/AppiumServer/src/main/java/utilities/JasonFile.json";
+    String filePath = "/Users/ashwajitthukral/AshwajitThukral/Tools/AshAppiumProjects/AndroidProjects/AppiumServer/src/main/java/utilities/JasonFile.json";
     FileReader fileReader = null;
     try {
       fileReader = new FileReader(filePath);
