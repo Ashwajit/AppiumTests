@@ -1,0 +1,353 @@
+2020-05-09 23:20:24:869 [Appium] Welcome to Appium v1.17.1
+2020-05-09 23:20:24:870 [Appium] Non-default server args:
+2020-05-09 23:20:24:871 [Appium]   port: 8109
+2020-05-09 23:20:24:871 [Appium]   logFile: /Users/ashwajitthukral/AshwajitThukral/Tools/Ash AppiumProjects/AndroidProjects/AppiumServer/loggerLogs/appiumserverlogs.txt
+2020-05-09 23:20:24:872 [Appium]   loglevel: info
+2020-05-09 23:20:24:872 [Appium]   localTimezone: true
+2020-05-09 23:20:24:872 [Appium]   defaultCapabilities: {
+2020-05-09 23:20:24:872 [Appium]     fullReset: false
+2020-05-09 23:20:24:872 [Appium]     noReset: true
+2020-05-09 23:20:24:872 [Appium]   }
+2020-05-09 23:20:24:872 [Appium]   relaxedSecurityEnabled: true
+2020-05-09 23:20:24:873 [Appium] Default capabilities, which will be added to each request unless overridden by desired capabilities:
+2020-05-09 23:20:24:873 [Appium]   fullReset: false
+2020-05-09 23:20:24:873 [Appium]   noReset: true
+2020-05-09 23:20:24:904 [Appium] Appium REST http interface listener started on 0.0.0.0:8109
+2020-05-09 23:20:24:993 [HTTP] --> GET /wd/hub/status
+2020-05-09 23:20:24:993 [HTTP] {}
+2020-05-09 23:20:24:999 [HTTP] <-- GET /wd/hub/status 200 5 ms - 68
+2020-05-09 23:20:24:999 [HTTP] 
+2020-05-09 23:20:25:470 [HTTP] --> POST /wd/hub/session
+2020-05-09 23:20:25:470 [HTTP] {"desiredCapabilities":{"showXcodeLog":true,"platformVersion":"13.4.1","automationName":"XCUITest","bundleId":"com.cambly.Cambly","platformName":"iOS","udid":"0603b00b9e3260be7ff337c054ed519c30922993","deviceName":"Ash iPhone"},"capabilities":{"firstMatch":[{"appium:automationName":"XCUITest","appium:bundleId":"com.cambly.Cambly","appium:deviceName":"Ash iPhone","platformName":"ios","appium:platformVersion":"13.4.1","appium:showXcodeLog":true,"appium:udid":"0603b00b9e3260be7ff337c054ed519c30922993"}]}}
+2020-05-09 23:20:25:473 [BaseDriver] The following capabilities are not standard capabilities and should have an extension prefix:
+2020-05-09 23:20:25:474 [BaseDriver]   fullReset
+2020-05-09 23:20:25:474 [BaseDriver]   noReset
+2020-05-09 23:20:26:291 [Appium] Appium v1.17.1 creating new XCUITestDriver (v3.22.0) session
+2020-05-09 23:20:26:291 [Appium] Applying relaxed security to 'XCUITestDriver' as per server command line argument. All insecure features will be enabled unless explicitly disabled by --deny-insecure
+2020-05-09 23:20:26:303 [BaseDriver] Session created with session id: 2b9fc047-301f-4b34-93fb-7eb2b186a4f4
+2020-05-09 23:20:26:337 [XCUITest] Determining device to run tests on: udid: '0603b00b9e3260be7ff337c054ed519c30922993', real device: true
+2020-05-09 23:20:26:337 [XCUITest] Normalized platformVersion capability value '13.4.1' to '13.4'
+2020-05-09 23:20:26:587 [XCUITest] Setting up real device
+2020-05-09 23:20:26:865 [WebDriverAgent] Using WDA path: '/usr/local/lib/node_modules/appium/node_modules/appium-webdriveragent'
+2020-05-09 23:20:26:866 [WebDriverAgent] Using WDA agent: '/usr/local/lib/node_modules/appium/node_modules/appium-webdriveragent/WebDriverAgent.xcodeproj'
+2020-05-09 23:20:26:964 [DevCon Factory] Requesting connection for device 0603b00b9e3260be7ff337c054ed519c30922993 on local port 8100, device port 8100
+2020-05-09 23:20:26:967 [DevCon Factory] Successfully requested the connection for 0603b00b9e3260be7ff337c054ed519c30922993:8100
+2020-05-09 23:20:26:991 [WebDriverAgent] Will uninstall running WDA since it has different version in comparison to the one which is bundled with appium-xcuitest-driver module (1588959489279 != 1588963300914)
+2020-05-09 23:20:29:158 [WebDriverAgent] Launching WebDriverAgent on the device
+2020-05-09 23:20:29:160 [WebDriverAgent] Fetching dependencies
+2020-05-09 23:20:29:165 [WebDriverAgent] Dependencies up-to-date
+2020-05-09 23:20:30:207 [Xcode] Command line invocation:
+2020-05-09 23:20:30:207 [Xcode]     
+2020-05-09 23:20:30:212 [Xcode] /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild build-for-testing test-without-building -project /usr/local/lib/node_modules/appium/node_modules/appium-webdriveragent/WebDriverAgent.xcodeproj -scheme WebDriverAgentRunner -destination id=0603b00b9e3260be7ff337c054ed519c30922993 IPHONEOS_DEPLOYMENT_TARGET=13.4 GCC_TREAT_WARNINGS_AS_ERRORS=0 COMPILER_INDEX_STORE_ENABLE=NO
+2020-05-09 23:20:30:212 [Xcode] 
+2020-05-09 23:20:30:213 [Xcode] Build settings from command line:
+2020-05-09 23:20:30:213 [Xcode]     COMPILER_INDEX_STORE_ENABLE = NO
+2020-05-09 23:20:30:213 [Xcode]     GCC_TREAT_WARNINGS_AS_ERRORS = 0
+2020-05-09 23:20:30:213 [Xcode]     IPHONEOS_DEPLOYMENT_TARGET = 13.4
+2020-05-09 23:20:30:213 [Xcode] 
+2020-05-09 23:20:30:214 [Xcode] 
+2020-05-09 23:20:30:237 [WD Proxy] Got response with unknown status: {"code":"ECONNRESET"}
+2020-05-09 23:20:30:530 [Xcode] 2020-05-09 23:20:30.530 xcodebuild[28443:3862555]  DTDeviceKit: deviceType from 0603b00b9e3260be7ff337c054ed519c30922993 was NULL
+2020-05-09 23:20:30:530 [Xcode] 
+2020-05-09 23:20:30:634 [Xcode] 2020-05-09 23:20:30.634 xcodebuild[28443:3862559]  DTDeviceKit: deviceType from 0603b00b9e3260be7ff337c054ed519c30922993 was NULL
+2020-05-09 23:20:30:635 [Xcode] 
+2020-05-09 23:20:31:086 [Xcode] 2020-05-09 23:20:31.085 xcodebuild[28443:3862555]  DTDeviceKit: deviceType from b9cca0a7334ef73f5dec36808f94fca9eb9235d0 was NULL
+2020-05-09 23:20:31:086 [Xcode] 
+2020-05-09 23:20:31:242 [WD Proxy] Got response with unknown status: {"code":"ECONNRESET"}
+2020-05-09 23:20:31:663 [Xcode] note: Using new build system
+2020-05-09 23:20:31:663 [Xcode] 
+2020-05-09 23:20:31:664 [Xcode] note: Building targets in parallel
+2020-05-09 23:20:31:664 [Xcode] note: Planning build
+2020-05-09 23:20:31:664 [Xcode] 
+2020-05-09 23:20:32:247 [WD Proxy] Got response with unknown status: {"code":"ECONNRESET"}
+2020-05-09 23:20:32:818 [Xcode] note: Using build description from disk
+2020-05-09 23:20:32:818 [Xcode] 
+2020-05-09 23:20:32:936 [Xcode] 
+2020-05-09 23:20:32:936 [Xcode] 
+2020-05-09 23:20:32:936 [Xcode] ** TEST BUILD SUCCEEDED **
+2020-05-09 23:20:32:937 [Xcode] 
+2020-05-09 23:20:32:937 [Xcode] 
+2020-05-09 23:20:32:948 [Xcode] 2020-05-09 23:20:32.947 xcodebuild[28443:3862558]  IDETestOperationsObserverDebug: Writing diagnostic log for test session to:
+2020-05-09 23:20:32:948 [Xcode] /Users/ashwajitthukral/Library/Developer/Xcode/DerivedData/WebDriverAgent-ciegwgvxzxdrqthilmrmczmqvrgu/Logs/Test/Test-WebDriverAgentRunner-2020.05.09_23-20-31-+1000.xcresult/Staging/2_Test/Diagnostics/WebDriverAgentRunner-68A24A60-21E3-42A1-BAE8-FB4DD5F8CAC3/WebDriverAgentRunner-50D3E37A-DAAB-463B-AAA5-191DD657264C/Session-WebDriverAgentRunner-2020-05-09_232032-Sf92HZ.log
+2020-05-09 23:20:32:948 [Xcode] 
+2020-05-09 23:20:32:948 [Xcode] 2020-05-09 23:20:32.948 xcodebuild[28443:3862501] [MT] IDETestOperationsObserverDebug: (DFA67E78-2E6E-4948-8B53-E2D4790FEBD2) Beginning test session WebDriverAgentRunner-DFA67E78-2E6E-4948-8B53-E2D4790FEBD2 at 2020-05-09 23:20:32.948 with Xcode 11E503a on target 📱<DVTiOSDevice (0x7fd115ac22b0), Ash iPhone, iPhone, 13.4.1 (17E262), 0603b00b9e3260be7ff337c054ed519c30922993> {
+2020-05-09 23:20:32:949 [Xcode] 		deviceSerialNumber:         FK1VQVAAJCLH
+2020-05-09 23:20:32:949 [Xcode] 		identifier:                 0603b00b9e3260be7ff337c054ed519c30922993
+2020-05-09 23:20:32:949 [Xcode] 		deviceClass:                iPhone
+2020-05-09 23:20:32:949 [Xcode] 		deviceName:                 Ash iPhone
+2020-05-09 23:20:32:949 [Xcode] 		deviceIdentifier:           0603b00b9e3260be7ff337c054ed519c30922993
+2020-05-09 23:20:32:949 [Xcode] 		productVersion:             13.4.1
+2020-05-09 23:20:32:950 [Xcode] 		buildVersion:               17E262
+2020-05-09 23:20:32:950 [Xcode] 		deviceSoftwareVersion:      13.4.1 (17E262)
+2020-05-09 23:20:32:950 [Xcode] 		deviceArchitecture:         arm64
+2020-05-09 23:20:32:950 [Xcode] 		deviceTotalCapacity:        58201288704
+2020-05-09 23:20:32:950 [Xcode] 		deviceAvailableCapacity:    4355723264
+2020-05-09 23:20:32:950 [Xcode] 		deviceIsTransient:          NO
+2020-05-09 23:20:32:950 [Xcode] 		ignored:                    NO
+2020-05-09 23:20:32:951 [Xcode] 		deviceIsBusy:               NO
+2020-05-09 23:20:32:951 [Xcode] 		deviceIsPaired:             YES
+2020-05-09 23:20:32:951 [Xcode] 		deviceIsActivated:          YES
+2020-05-09 23:20:32:951 [Xcode] 		deviceActivationState:      Activated
+2020-05-09 23:20:32:951 [Xcode] 		isPasscodeLocked:           NO
+2020-05-09 23:20:32:951 [Xcode] 		deviceType:                 <DVTDeviceType:0x7fd11584cb90 Xcode.DeviceType.iPhone>
+2020-05-09 23:20:32:952 [Xcode] 		supportedDeviceFamilies:    (
+2020-05-09 23:20:32:952 [Xcode]     1
+2020-05-09 23:20:32:952 [Xcode] )
+2020-05-09 23:20:32:952 [Xcode] 		applications:              (null)
+2020-05-09 23:20:32:952 [Xcode] 		provisioningProfiles:      (null)
+2020-05-09 23:20:32:953 [Xcode] 		hasInternalSupport:        NO
+2020-05-09 23:20:32:953 [Xcode] 		hasWritableSystem:         NO
+2020-05-09 23:20:32:953 [Xcode] 		isSupportedOS:             YES
+2020-05-09 23:20:32:953 [Xcode] 		bootArgs:                  (null)
+2020-05-09 23:20:32:953 [Xcode] 		nextBootArgs:              (null)
+2020-05-09 23:20:32:954 [Xcode] 		connected:                 YES
+2020-05-09 23:20:32:954 [Xcode] 		isWirelessEnabled:         NO
+2020-05-09 23:20:32:954 [Xcode] 		connectionType:            direct
+2020-05-09 23:20:32:954 [Xcode] 		hostname:                  (null)
+2020-05-09 23:20:32:955 [Xcode] 		bonjourServiceName:        3c:2e:ff:ac:65:f7@fe80::3e2e:ffff:feac:65f7._apple-mobdev2._tcp.local.
+2020-05-09 23:20:32:955 [Xcode] 		activeProxiedDevice:       b9cca0a7334ef73f5dec36808f94fca9eb9235d0
+2020-05-09 23:20:32:955 [Xcode] 		} (13.4.1 (17E262))
+2020-05-09 23:20:32:955 [Xcode] 
+2020-05-09 23:20:33:034 [Xcode] 2020-05-09 23:20:33.034 xcodebuild[28443:3862501] [MT] IDETestOperationsObserverDebug: (DFA67E78-2E6E-4948-8B53-E2D4790FEBD2) Finished requesting crash reports. Continuing with testing.
+2020-05-09 23:20:33:035 [Xcode] 
+2020-05-09 23:20:33:251 [WD Proxy] Got response with unknown status: {"code":"ECONNRESET"}
+2020-05-09 23:20:34:258 [WD Proxy] Got response with unknown status: {"code":"ECONNRESET"}
+2020-05-09 23:20:35:207 [Xcode] 2020-05-09 23:20:35.207 xcodebuild[28443:3862555]  DTDeviceKit: Failed to mount DDI from '<DVTFilePath:0x7fd115b6d0f0:'/Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/DeviceSupport/6.1/DeveloperDiskImage.dmg'>', error=-402653158: Error Domain=com.apple.dtdevicekit Code=806 "Failed to prepare device for development." UserInfo={AssociatedMobileDeviceFunction=AMDeviceMountImage, NSUnderlyingError=0x7fd0e4814370 {Error Domain=com.apple.dt.MobileDeviceErrorDomain Code=-402653158 "The device is passcode protected." UserInfo={MobileDeviceErrorCode=(0xE800001A), com.apple.dtdevicekit.stacktrace=(
+2020-05-09 23:20:35:208 [Xcode] 	0   DTDeviceKitBase                     0x000000011460381a DTDKCreateNSErrorFromAMDErrorCode + 233
+2020-05-09 23:20:35:208 [Xcode] 	1   DTDeviceKitBase                     0x00000001146428a9 -[DTDKMobileDeviceToken _mountDeveloperDiskImage:withError:] + 1034
+2020-05-09 23:20:35:208 [Xcode] 	2   DTDeviceKitBase                     0x00000001146435e7 __58-[DTDKMobileDeviceToken mountDeveloperDiskImageWithError:]_block_invoke + 779
+2020-05-09 23:20:35:208 [Xcode] 	3   libdispatch.dylib                   0x00007fff6d137658 _dispatch_client_callout + 8
+2020-05-09 23:20:35:208 [Xcode] 	4   libdispatch.dylib                   0x00007fff6d1436ec _dispatch_lane_barrier_sync_invoke_and_complete + 60
+2020-05-09 23:20:35:208 [Xcode] 	5   DTDeviceKitBase                     0x000000011464327a -[DTDKMobileDeviceToken mountDeveloperDiskImageWithError:] + 199
+2020-05-09 23:20:35:208 [Xcode] 	6   IDEiOSSupportCore                   0x00000001141840c9 __28-[DVTiOSDevice attachToken:]_block_invoke_4 + 254
+2020-05-09 23:20:35:209 [Xcode] 	7   DVTFoundation                       0x0000000106e3c7f4 __DVT_CALLING_CLIENT_BLOCK__ + 7
+2020-05-09 23:20:35:209 [Xcode] 	8   DVTFoundation                       0x0000000106e3e436 __DVTDispatchAsync_block_invoke + 1194
+2020-05-09 23:20:35:209 [Xcode] 	9   libdispatch.dylib                   0x00007fff6d1366c4 _dispatch_call_block_and_release + 12
+2020-05-09 23:20:35:209 [Xcode] 	10  libdispatch.dylib                   0x00007fff6d137658 _dispatch_client_callout + 8
+2020-05-09 23:20:35:209 [Xcode] 	11  libdispatch.dylib                   0x00007fff6d139818 _dispatch_continuation_pop + 414
+2020-05-09 23:20:35:209 [Xcode] 	12  libdispatch.dylib                   0x00007fff6d138f16 _dispatch_async_redirect_invoke + 703
+2020-05-09 23:20:35:209 [Xcode] 	13  libdispatch.dylib                   0x00007fff6d145957 _dispatch_root_queue_drain + 326
+2020-05-09 23:20:35:209 [Xcode] 	14  libdispatch.dylib                   0x00007fff6d146097 _dispatch_worker_thread2 + 92
+2020-05-09 23:20:35:209 [Xcode] 	15  libsystem_pthread.dylib             0x00007fff6d3919f7 _pthread_wqthread + 220
+2020-05-09 23:20:35:210 [Xcode] 	16  libsystem_pthread.dylib             0x00007fff6d390b77 start_wqthread + 15
+2020-05-09 23:20:35:210 [Xcode] ), DVTRadarComponentKey=261622, NSLocalizedDescription=The device is passcode protected.}}, NSLocalizedRecoverySuggestion=If you are certain that Xcode supports development on this device, try disconnecting and reconnecting the device., NSLocalizedFailure=This operation can fail if the version of the OS on the device is newer than the version of Xcode that is running., DVTRadarComponentKey=487927, NSLocalizedDescription=Failed to prepare device for development.}
+2020-05-09 23:20:35:210 [Xcode] 
+2020-05-09 23:20:35:210 [Xcode] 2020-05-09 23:20:35.207 xcodebuild[28443:3862555]  iPhoneSupport: 📱<DVTiOSDevice (0x7fd115ac22b0), Ash iPhone, iPhone, 13.4.1 (17E262), 0603b00b9e3260be7ff337c054ed519c30922993> unable to mount DeveloperDiskImage (Error Domain=com.apple.dtdevicekit Code=806 "Failed to prepare device for development." UserInfo={AssociatedMobileDeviceFunction=AMDeviceMountImage, NSUnderlyingError=0x7fd0e4814370 {Error Domain=com.apple.dt.MobileDeviceErrorDomain Code=-402653158 "The device is passcode protected." UserInfo={MobileDeviceErrorCode=(0xE800001A), com.apple.dtdevicekit.stacktrace=(
+2020-05-09 23:20:35:210 [Xcode] 	0   DTDeviceKitBase                     0x000000011460381a DTDKCreateNSErrorFromAMDErrorCode + 233
+2020-05-09 23:20:35:211 [Xcode] 	1   DTDeviceKitBase                     0x00000001146428a9 -[DTDKMobileDeviceToken _mountDeveloperDiskImage:withError:] + 1034
+2020-05-09 23:20:35:211 [Xcode] 	2   DTDeviceKitBase                     0x00000001146435e7 __58-[DTDKMobileDeviceToken mountDeveloperDiskImageWithError:]_block_invoke + 779
+2020-05-09 23:20:35:211 [Xcode] 	3   libdispatch.dylib                   0x00007fff6d137658 _dispatch_client_callout + 8
+2020-05-09 23:20:35:211 [Xcode] 	4   libdispatch.dylib                   0x00007fff6d1436ec _dispatch_lane_barrier_sync_invoke_and_complete + 60
+2020-05-09 23:20:35:211 [Xcode] 	5   DTDeviceKitBase                     0x000000011464327a -[DTDKMobileDeviceToken mountDeveloperDiskImageWithError:] + 199
+2020-05-09 23:20:35:211 [Xcode] 	6   IDEiOSSupportCore                   0x00000001141840c9 __28-[DVTiOSDevice attachToken:]_block_invoke_4 + 254
+2020-05-09 23:20:35:211 [Xcode] 	7   DVTFoundation                       0x0000000106e3c7f4 __DVT_CALLING_CLIENT_BLOCK__ + 7
+2020-05-09 23:20:35:211 [Xcode] 	8   DVTFoundation                       0x0000000106e3e436 __DVTDispatchAsync_block_invoke + 1194
+2020-05-09 23:20:35:212 [Xcode] 	9   libdispatch.dylib                   0x00007fff6d1366c4 _dispatch_call_block_and_release + 12
+2020-05-09 23:20:35:212 [Xcode] 	10  libdispatch.dylib                   0x00007fff6d137658 _dispatch_client_callout + 8
+2020-05-09 23:20:35:212 [Xcode] 	11  libdispatch.dylib                   0x00007fff6d139818 _dispatch_continuation_pop + 414
+2020-05-09 23:20:35:212 [Xcode] 	12  libdispatch.dylib                   0x00007fff6d138f16 _dispatch_async_redirect_invoke + 703
+2020-05-09 23:20:35:212 [Xcode] 	13  libdispatch.dylib                   0x00007fff6d145957 _dispatch_root_queue_drain + 326
+2020-05-09 23:20:35:212 [Xcode] 	14  libdispatch.dylib                   0x00007fff6d146097 _dispatch_worker_thread2 + 92
+2020-05-09 23:20:35:212 [Xcode] 	15  libsystem_pthread.dylib             0x00007fff6d3919f7 _pthread_wqthread + 220
+2020-05-09 23:20:35:212 [Xcode] 	16  libsystem_pthread.dylib             0x00007fff6d390b77 start_wqthread + 15
+2020-05-09 23:20:35:212 [Xcode] ), DVTRadarComponentKey=261622, NSLocalizedDescription=The device is passcode protected.}}, NSLocalizedRecoverySuggestion=If you are certain that Xcode supports development on this device, try disconnecting and reconnecting the device., NSLocalizedFailure=This operation can fail if the version of the OS on the device is newer than the version of Xcode that is running., DVTRadarComponentKey=487927, NSLocalizedDescription=Failed to prepare device for development.})
+2020-05-09 23:20:35:212 [Xcode] 
+2020-05-09 23:20:35:263 [WD Proxy] Got response with unknown status: {"code":"ECONNRESET"}
+2020-05-09 23:20:36:268 [WD Proxy] Got response with unknown status: {"code":"ECONNRESET"}
+2020-05-09 23:20:37:278 [WD Proxy] Got response with unknown status: {"code":"ECONNRESET"}
+2020-05-09 23:20:38:261 [Xcode] 2020-05-09 23:20:38.262736+1000 WebDriverAgentRunner-Runner[3267:982792] Running tests...
+2020-05-09 23:20:38:261 [Xcode] 
+2020-05-09 23:20:38:286 [WD Proxy] Got response with unknown status: {"code":"ECONNRESET"}
+2020-05-09 23:20:38:397 [Xcode] 2020-05-09 23:20:38.397 xcodebuild[28443:3862565]  DTDeviceKit: Failed to mount DDI from '<DVTFilePath:0x7fd115b6d0f0:'/Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/DeviceSupport/6.1/DeveloperDiskImage.dmg'>', error=-402653158: Error Domain=com.apple.dtdevicekit Code=806 "Failed to prepare device for development." UserInfo={AssociatedMobileDeviceFunction=AMDeviceMountImage, NSUnderlyingError=0x7fd0e4433a60 {Error Domain=com.apple.dt.MobileDeviceErrorDomain Code=-402653158 "The device is passcode protected." UserInfo={MobileDeviceErrorCode=(0xE800001A), com.apple.dtdevicekit.stacktrace=(
+2020-05-09 23:20:38:397 [Xcode] 	0   DTDeviceKitBase                     0x000000011460381a DTDKCreateNSErrorFromAMDErrorCode + 233
+2020-05-09 23:20:38:397 [Xcode] 	1   DTDeviceKitBase                     0x00000001146428a9 -[DTDKMobileDeviceToken _mountDeveloperDiskImage:withError:] + 1034
+2020-05-09 23:20:38:397 [Xcode] 	2   DTDeviceKitBase                     0x00000001146435e7 __58-[DTDKMobileDeviceToken mountDeveloperDiskImageWithError:]_block_invoke + 779
+2020-05-09 23:20:38:398 [Xcode] 	3   libdispatch.dylib                   0x00007fff6d137658 _dispatch_client_callout + 8
+2020-05-09 23:20:38:398 [Xcode] 	4   libdispatch.dylib                   0x00007fff6d143a38 _dispatch_sync_invoke_and_complete_recurse + 65
+2020-05-09 23:20:38:398 [Xcode] 	5   libdispatch.dylib                   0x00007fff6d1435ab _dispatch_sync_f_slow + 195
+2020-05-09 23:20:38:398 [Xcode] 	6   DTDeviceKitBase                     0x000000011464327a -[DTDKMobileDeviceToken mountDeveloperDiskImageWithError:] + 199
+2020-05-09 23:20:38:398 [Xcode] 	7   IDEiOSSupportCore                   0x00000001141840c9 __28-[DVTiOSDevice attachToken:]_block_invoke_4 + 254
+2020-05-09 23:20:38:398 [Xcode] 	8   DVTFoundation                       0x0000000106e3c7f4 __DVT_CALLING_CLIENT_BLOCK__ + 7
+2020-05-09 23:20:38:398 [Xcode] 	9   DVTFoundation                       0x0000000106e3e436 __DVTDispatchAsync_block_invoke + 1194
+2020-05-09 23:20:38:398 [Xcode] 	10  libdispatch.dylib                   0x00007fff6d1366c4 _dispatch_call_block_and_release + 12
+2020-05-09 23:20:38:398 [Xcode] 	11  libdispatch.dylib                   0x00007fff6d137658 _dispatch_client_callout + 8
+2020-05-09 23:20:38:399 [Xcode] 	12  libdispatch.dylib                   0x00007fff6d139818 _dispatch_continuation_pop + 414
+2020-05-09 23:20:38:399 [Xcode] 	13  libdispatch.dylib                   0x00007fff6d138f16 _dispatch_async_redirect_invoke + 703
+2020-05-09 23:20:38:399 [Xcode] 	14  libdispatch.dylib                   0x00007fff6d145957 _dispatch_root_queue_drain + 326
+2020-05-09 23:20:38:399 [Xcode] 	15  libdispatch.dylib                   0x00007fff6d146097 _dispatch_worker_thread2 + 92
+2020-05-09 23:20:38:399 [Xcode] 	16  libsystem_pthread.dylib             0x00007fff6d3919f7 _pthread_wqthread + 220
+2020-05-09 23:20:38:399 [Xcode] 	17  libsystem_pthread.dylib             0x00007fff6d390b77 start_wqthread + 15
+2020-05-09 23:20:38:399 [Xcode] ), DVTRadarComponentKey=261622, NSLocalizedDescription=The device is passcode protected.}}, NSLocalizedRecoverySuggestion=If you are certain that Xcode supports development on this device, try disconnecting and reconnecting the device., NSLocalizedFailure=This operation can fail if the version of the OS on the device is newer than the version of Xcode that is running., DVTRadarComponentKey=487927, NSLocalizedDescription=Failed to prepare device for development.}
+2020-05-09 23:20:38:399 [Xcode] 
+2020-05-09 23:20:38:400 [Xcode] 2020-05-09 23:20:38.397 xcodebuild[28443:3862565]  iPhoneSupport: 📱<DVTiOSDevice (0x7fd115ac22b0), Ash iPhone, iPhone, 13.4.1 (17E262), 0603b00b9e3260be7ff337c054ed519c30922993> unable to mount DeveloperDiskImage (Error Domain=com.apple.dtdevicekit Code=806 "Failed to prepare device for development." UserInfo={AssociatedMobileDeviceFunction=AMDeviceMountImage, NSUnderlyingError=0x7fd0e4433a60 {Error Domain=com.apple.dt.MobileDeviceErrorDomain Code=-402653158 "The device is passcode protected." UserInfo={MobileDeviceErrorCode=(0xE800001A), com.apple.dtdevicekit.stacktrace=(
+2020-05-09 23:20:38:400 [Xcode] 	0   DTDeviceKitBase                     0x000000011460381a DTDKCreateNSErrorFromAMDErrorCode + 233
+2020-05-09 23:20:38:400 [Xcode] 	1   DTDeviceKitBase                     0x00000001146428a9 -[DTDKMobileDeviceToken _mountDeveloperDiskImage:withError:] + 1034
+2020-05-09 23:20:38:400 [Xcode] 	2   DTDeviceKitBase                     0x00000001146435e7 __58-[DTDKMobileDeviceToken mountDeveloperDiskImageWithError:]_block_invoke + 779
+2020-05-09 23:20:38:400 [Xcode] 	3   libdispatch.dylib                   0x00007fff6d137658 _dispatch_client_callout + 8
+2020-05-09 23:20:38:400 [Xcode] 	4   libdispatch.dylib                   0x00007fff6d143a38 _dispatch_sync_invoke_and_complete_recurse + 65
+2020-05-09 23:20:38:400 [Xcode] 	5   libdispatch.dylib                   0x00007fff6d1435ab _dispatch_sync_f_slow + 195
+2020-05-09 23:20:38:400 [Xcode] 	6   DTDeviceKitBase                     0x000000011464327a -[DTDKMobileDeviceToken mountDeveloperDiskImageWithError:] + 199
+2020-05-09 23:20:38:401 [Xcode] 	7   IDEiOSSupportCore                   0x00000001141840c9 __28-[DVTiOSDevice attachToken:]_block_invoke_4 + 254
+2020-05-09 23:20:38:401 [Xcode] 	8   DVTFoundation                       0x0000000106e3c7f4 __DVT_CALLING_CLIENT_BLOCK__ + 7
+2020-05-09 23:20:38:401 [Xcode] 	9   DVTFoundation                       0x0000000106e3e436 __DVTDispatchAsync_block_invoke + 1194
+2020-05-09 23:20:38:401 [Xcode] 	10  libdispatch.dylib                   0x00007fff6d1366c4 _dispatch_call_block_and_release + 12
+2020-05-09 23:20:38:401 [Xcode] 	11  libdispatch.dylib                   0x00007fff6d137658 _dispatch_client_callout + 8
+2020-05-09 23:20:38:401 [Xcode] 	12  libdispatch.dylib                   0x00007fff6d139818 _dispatch_continuation_pop + 414
+2020-05-09 23:20:38:401 [Xcode] 	13  libdispatch.dylib                   0x00007fff6d138f16 _dispatch_async_redirect_invoke + 703
+2020-05-09 23:20:38:401 [Xcode] 	14  libdispatch.dylib                   0x00007fff6d145957 _dispatch_root_queue_drain + 326
+2020-05-09 23:20:38:402 [Xcode] 	15  libdispatch.dylib                   0x00007fff6d146097 _dispatch_worker_thread2 + 92
+2020-05-09 23:20:38:402 [Xcode] 	16  libsystem_pthread.dylib             0x00007fff6d3919f7 _pthread_wqthread + 220
+2020-05-09 23:20:38:402 [Xcode] 	17  libsystem_pthread.dylib             0x00007fff6d390b77 start_wqthread + 15
+2020-05-09 23:20:38:402 [Xcode] ), DVTRadarComponentKey=261622, NSLocalizedDescription=The device is passcode protected.}}, NSLocalizedRecoverySuggestion=If you are certain that Xcode supports development on this device, try disconnecting and reconnecting the device., NSLocalizedFailure=This operation can fail if the version of the OS on the device is newer than the version of Xcode that is running., DVTRadarComponentKey=487927, NSLocalizedDescription=Failed to prepare device for development.})
+2020-05-09 23:20:38:402 [Xcode] 
+2020-05-09 23:20:38:415 [Xcode] Test Suite 'All tests' started at 2020-05-09 23:20:38.416
+2020-05-09 23:20:38:415 [Xcode] 
+2020-05-09 23:20:38:415 [Xcode] Test Suite 'WebDriverAgentRunner.xctest' started at 2020-05-09 23:20:38.417
+2020-05-09 23:20:38:415 [Xcode] Test Suite 'UITestingUITests' started at 2020-05-09 23:20:38.417
+2020-05-09 23:20:38:416 [Xcode] 
+2020-05-09 23:20:38:646 [Xcode] 2020-05-09 23:20:38.647163+1000 WebDriverAgentRunner-Runner[3267:982792] [User Defaults] Couldn't write values for keys (
+2020-05-09 23:20:38:647 [Xcode]     KeyboardAutocorrection
+2020-05-09 23:20:38:647 [Xcode] ) in CFPrefsPlistSource<0x28139ed00> (Domain: com.apple.Preferences, User: kCFPreferencesCurrentUser, ByHost: No, Container: (null), Contents Need Refresh: No): setting preferences outside an application's container requires user-preference-write or file-write-data sandbox access
+2020-05-09 23:20:38:647 [Xcode] 
+2020-05-09 23:20:38:654 [Xcode] 2020-05-09 23:20:38.655315+1000 WebDriverAgentRunner-Runner[3267:982792] [User Defaults] Couldn't write values for keys (
+2020-05-09 23:20:38:654 [Xcode]     KeyboardPrediction
+2020-05-09 23:20:38:654 [Xcode] ) in CFPrefsPlistSource<0x28139ed00> (Domain: com.apple.Preferences, User: kCFPreferencesCurrentUser, ByHost: No, Container: (null), Contents Need Refresh: No): setting preferences outside an application's container requires user-preference-write or file-write-data sandbox access
+2020-05-09 23:20:38:654 [Xcode] 
+2020-05-09 23:20:38:656 [Xcode] 2020-05-09 23:20:38.657794+1000 WebDriverAgentRunner-Runner[3267:982792] [User Defaults] Couldn't write values for keys (
+2020-05-09 23:20:38:656 [Xcode]     DidShowGestureKeyboardIntroduction
+2020-05-09 23:20:38:656 [Xcode] ) in CFPrefsPlistSource<0x28139ed00> (Domain: com.apple.Preferences, User: kCFPreferencesCurrentUser, ByHost: No, Container: (null), Contents Need Refresh: No): setting preferences outside an application's container requires user-preference-write or file-write-data sandbox access
+2020-05-09 23:20:38:657 [Xcode] 
+2020-05-09 23:20:38:657 [Xcode] Test Case '-[UITestingUITests testRunner]' started.
+2020-05-09 23:20:38:657 [Xcode] 
+2020-05-09 23:20:38:657 [Xcode]     t =     0.00s Start Test at 2020-05-09 23:20:38.659
+2020-05-09 23:20:38:658 [Xcode] 
+2020-05-09 23:20:38:659 [Xcode]     t =     0.00s Set Up
+2020-05-09 23:20:38:659 [Xcode] 
+2020-05-09 23:20:38:670 [Xcode] 2020-05-09 23:20:38.672056+1000 WebDriverAgentRunner-Runner[3267:982792] Built at May  9 2020 21:16:11
+2020-05-09 23:20:38:670 [Xcode] 
+2020-05-09 23:20:38:687 [Xcode] 2020-05-09 23:20:38.688332+1000 WebDriverAgentRunner-Runner[3267:982792] ServerURLHere->http://localhost:8100<-ServerURLHere
+2020-05-09 23:20:38:687 [Xcode] 
+2020-05-09 23:20:38:687 [Xcode] 2020-05-09 23:20:38.688975+1000 WebDriverAgentRunner-Runner[3267:982844] Using singleton test manager
+2020-05-09 23:20:38:687 [Xcode] 
+2020-05-09 23:20:39:319 [Xcode]     t =     0.66s Open com.cambly.Cambly
+2020-05-09 23:20:39:319 [Xcode] 
+2020-05-09 23:20:39:320 [Xcode]     t =     0.66s     Launch com.cambly.Cambly
+2020-05-09 23:20:39:320 [Xcode] 
+2020-05-09 23:20:39:323 [Xcode]     t =     0.66s         Terminate com.cambly.Cambly:3262
+2020-05-09 23:20:39:323 [Xcode] 
+2020-05-09 23:20:40:453 [Xcode]     t =     1.79s         Wait for accessibility to load
+2020-05-09 23:20:40:454 [Xcode] 
+2020-05-09 23:20:40:468 [Xcode]     t =     1.81s         Setting up automation session
+2020-05-09 23:20:40:469 [Xcode] 
+2020-05-09 23:20:40:528 [Xcode]     t =     1.87s         Wait for com.cambly.Cambly to idle
+2020-05-09 23:20:40:529 [Xcode] 
+2020-05-09 23:20:41:727 [Xcode] 2020-05-09 23:20:41.727302+1000 WebDriverAgentRunner-Runner[3267:982792] Getting the most recent active application (out of 1 total items)
+2020-05-09 23:20:41:727 [Xcode] 
+2020-05-09 23:20:41:731 [Xcode]     t =     3.07s Find the Application 'com.cambly.Cambly'
+2020-05-09 23:20:41:732 [Xcode] 
+2020-05-09 23:20:41:733 [Xcode]     t =     3.07s     Requesting snapshot of accessibility hierarchy for app with pid 3270
+2020-05-09 23:20:41:733 [Xcode] 
+2020-05-09 23:20:41:790 [WD Proxy] Determined the downstream protocol as 'W3C'
+2020-05-09 23:20:41:790 [XCUITest] Skipping setting of the initial display orientation. Set the "orientation" capability to either "LANDSCAPE" or "PORTRAIT", if this is an undesired behavior.
+2020-05-09 23:20:41:791 [Appium] New XCUITestDriver session created successfully, session 2b9fc047-301f-4b34-93fb-7eb2b186a4f4 added to master session list
+2020-05-09 23:20:41:794 [HTTP] <-- POST /wd/hub/session 200 16323 ms - 511
+2020-05-09 23:20:41:794 [HTTP] 
+2020-05-09 23:20:41:851 [HTTP] --> POST /wd/hub/session/2b9fc047-301f-4b34-93fb-7eb2b186a4f4/element
+2020-05-09 23:20:41:851 [HTTP] {"using":"-ios class chain","value":"**/XCUIElementTypeButton[`name BEGINSWITH \"Continue with Apple\"`]"}
+2020-05-09 23:20:41:886 [Xcode] 2020-05-09 23:20:41.883135+1000 WebDriverAgentRunner-Runner[3267:982792] Getting the most recent active application (out of 1 total items)
+2020-05-09 23:20:41:887 [Xcode] 
+2020-05-09 23:20:41:888 [Xcode]     t =     3.23s Get all elements bound by accessibility element for: Elements matching predicate 'wdName BEGINSWITH "Continue with Apple" AND (1 == 1 OR identifier == 0 OR frame == 0 OR value == 0 OR title == 0 OR label == 0 OR elementType == 0 OR enabled == 0 OR placeholderValue == 0 OR selected == 0)'
+2020-05-09 23:20:41:888 [Xcode] 
+2020-05-09 23:20:41:890 [Xcode]     t =     3.23s     Requesting snapshot of accessibility hierarchy for app with pid 3270
+2020-05-09 23:20:41:890 [Xcode] 
+2020-05-09 23:20:41:935 [Xcode]     t =     3.28s     Find: Descendants matching type Button
+2020-05-09 23:20:41:935 [Xcode] 
+2020-05-09 23:20:41:940 [Xcode]     t =     3.28s     Find: Elements matching predicate 'wdName BEGINSWITH "Continue with Apple" AND (1 == 1 OR identifier == 0 OR frame == 0 OR value == 0 OR title == 0 OR label == 0 OR elementType == 0 OR enabled == 0 OR placeholderValue == 0 OR selected == 0)'
+2020-05-09 23:20:41:940 [Xcode] 
+2020-05-09 23:20:41:944 [Xcode]     t =     3.29s Checking existence of `"Continue with Apple" Button`
+2020-05-09 23:20:41:944 [Xcode] 
+2020-05-09 23:20:41:948 [Xcode]     t =     3.29s     Requesting snapshot of accessibility hierarchy for app with pid 3270
+2020-05-09 23:20:41:948 [Xcode] 
+2020-05-09 23:20:41:979 [Xcode]     t =     3.32s     Find: Descendants matching type Button
+2020-05-09 23:20:41:979 [Xcode] 
+2020-05-09 23:20:41:981 [Xcode]     t =     3.32s     Find: Elements matching predicate 'wdName BEGINSWITH "Continue with Apple" AND (1 == 1 OR identifier == 0 OR frame == 0 OR value == 0 OR title == 0 OR label == 0 OR elementType == 0 OR enabled == 0 OR placeholderValue == 0 OR selected == 0)'
+2020-05-09 23:20:41:981 [Xcode] 
+2020-05-09 23:20:41:983 [Xcode]     t =     3.33s     Find: Identity Binding
+2020-05-09 23:20:41:983 [Xcode] 
+2020-05-09 23:20:41:992 [Xcode]     t =     3.34s Requesting snapshot of accessibility hierarchy for app with pid 3270
+2020-05-09 23:20:41:992 [Xcode] 
+2020-05-09 23:20:42:019 [Xcode]     t =     3.36s Find: Descendants matching type Button
+2020-05-09 23:20:42:020 [Xcode] 
+2020-05-09 23:20:42:023 [Xcode]     t =     3.37s Find: Elements matching predicate 'wdName BEGINSWITH "Continue with Apple" AND (1 == 1 OR identifier == 0 OR frame == 0 OR value == 0 OR title == 0 OR label == 0 OR elementType == 0 OR enabled == 0 OR placeholderValue == 0 OR selected == 0)'
+2020-05-09 23:20:42:024 [Xcode] 
+2020-05-09 23:20:42:024 [Xcode]     t =     3.37s Find: Identity Binding
+2020-05-09 23:20:42:024 [Xcode] 
+2020-05-09 23:20:42:030 [HTTP] <-- POST /wd/hub/session/2b9fc047-301f-4b34-93fb-7eb2b186a4f4/element 200 179 ms - 137
+2020-05-09 23:20:42:030 [HTTP] 
+2020-05-09 23:20:42:039 [HTTP] --> POST /wd/hub/session/2b9fc047-301f-4b34-93fb-7eb2b186a4f4/element/14000000-0000-0000-C60C-000000000000/click
+2020-05-09 23:20:42:039 [HTTP] {"id":"14000000-0000-0000-C60C-000000000000"}
+2020-05-09 23:20:42:040 [W3C (2b9fc047)] Driver proxy active, passing request on via HTTP proxy
+2020-05-09 23:20:42:049 [Xcode]     t =     3.39s Requesting snapshot of accessibility hierarchy for app with pid 3270
+2020-05-09 23:20:42:049 [Xcode] 
+2020-05-09 23:20:42:082 [Xcode]     t =     3.43s Find: Descendants matching type Button
+2020-05-09 23:20:42:083 [Xcode] 
+2020-05-09 23:20:42:084 [Xcode]     t =     3.43s Find: Elements matching predicate 'wdName BEGINSWITH "Continue with Apple" AND (1 == 1 OR identifier == 0 OR frame == 0 OR value == 0 OR title == 0 OR label == 0 OR elementType == 0 OR enabled == 0 OR placeholderValue == 0 OR selected == 0)'
+2020-05-09 23:20:42:084 [Xcode] 
+2020-05-09 23:20:42:086 [Xcode]     t =     3.43s Find: Identity Binding
+2020-05-09 23:20:42:086 [Xcode] 
+2020-05-09 23:20:42:091 [Xcode]     t =     3.43s Find the "Continue with Apple" Button
+2020-05-09 23:20:42:091 [Xcode] 
+2020-05-09 23:20:42:095 [Xcode]     t =     3.44s     Requesting snapshot of accessibility hierarchy for app with pid 3270
+2020-05-09 23:20:42:095 [Xcode] 
+2020-05-09 23:20:42:124 [Xcode]     t =     3.47s     Find: Descendants matching type Button
+2020-05-09 23:20:42:125 [Xcode] 
+2020-05-09 23:20:42:126 [Xcode]     t =     3.47s     Find: Elements matching predicate 'wdName BEGINSWITH "Continue with Apple" AND (1 == 1 OR identifier == 0 OR frame == 0 OR value == 0 OR title == 0 OR label == 0 OR elementType == 0 OR enabled == 0 OR placeholderValue == 0 OR selected == 0)'
+2020-05-09 23:20:42:126 [Xcode] 
+2020-05-09 23:20:42:128 [Xcode]     t =     3.47s     Find: Identity Binding
+2020-05-09 23:20:42:128 [Xcode] 
+2020-05-09 23:20:42:233 [Xcode]     t =     3.57s Find the "Continue with Apple" Button
+2020-05-09 23:20:42:233 [Xcode] 
+2020-05-09 23:20:42:236 [Xcode]     t =     3.58s     Requesting snapshot of accessibility hierarchy for app with pid 3270
+2020-05-09 23:20:42:236 [Xcode] 
+2020-05-09 23:20:42:269 [Xcode]     t =     3.61s     Find: Descendants matching type Button
+2020-05-09 23:20:42:269 [Xcode] 
+2020-05-09 23:20:42:272 [Xcode]     t =     3.62s     Find: Elements matching predicate 'wdName BEGINSWITH "Continue with Apple" AND (1 == 1 OR identifier == 0 OR frame == 0 OR value == 0 OR title == 0 OR label == 0 OR elementType == 0 OR enabled == 0 OR placeholderValue == 0 OR selected == 0)'
+2020-05-09 23:20:42:272 [Xcode] 
+2020-05-09 23:20:42:274 [Xcode]     t =     3.62s     Find: Identity Binding
+2020-05-09 23:20:42:275 [Xcode] 
+2020-05-09 23:20:42:282 [Xcode]     t =     3.63s Tap "Continue with Apple" Button
+2020-05-09 23:20:42:282 [Xcode] 
+2020-05-09 23:20:42:283 [Xcode]     t =     3.63s     Wait for com.cambly.Cambly to idle
+2020-05-09 23:20:42:283 [Xcode] 
+2020-05-09 23:20:42:291 [Xcode]     t =     3.63s     Find the "Continue with Apple" Button
+2020-05-09 23:20:42:291 [Xcode] 
+2020-05-09 23:20:42:295 [Xcode]     t =     3.64s         Requesting snapshot of accessibility hierarchy for app with pid 3270
+2020-05-09 23:20:42:295 [Xcode] 
+2020-05-09 23:20:42:329 [Xcode]     t =     3.67s         Find: Descendants matching type Button
+2020-05-09 23:20:42:329 [Xcode] 
+2020-05-09 23:20:42:331 [Xcode]     t =     3.67s         Find: Elements matching predicate 'wdName BEGINSWITH "Continue with Apple" AND (1 == 1 OR identifier == 0 OR frame == 0 OR value == 0 OR title == 0 OR label == 0 OR elementType == 0 OR enabled == 0 OR placeholderValue == 0 OR selected == 0)'
+2020-05-09 23:20:42:332 [Xcode] 
+2020-05-09 23:20:42:334 [Xcode]     t =     3.68s         Find: Identity Binding
+2020-05-09 23:20:42:334 [Xcode] 
+2020-05-09 23:20:42:340 [Xcode]     t =     3.68s     Check for interrupting elements affecting "Continue with Apple" Button
+2020-05-09 23:20:42:340 [Xcode] 
+2020-05-09 23:20:42:354 [Xcode]     t =     3.70s         Requesting snapshot of accessibility hierarchy for app with pid 3270
+2020-05-09 23:20:42:355 [Xcode] 
+2020-05-09 23:20:42:376 [Xcode]     t =     3.72s         Find: Descendants matching type Alert
+2020-05-09 23:20:42:376 [Xcode] 
+2020-05-09 23:20:42:381 [Xcode]     t =     3.72s     Synthesize event
+2020-05-09 23:20:42:381 [Xcode] 
+2020-05-09 23:20:42:453 [Xcode]     t =     3.80s     Wait for com.cambly.Cambly to idle
+2020-05-09 23:20:42:453 [Xcode] 
+2020-05-09 23:20:42:488 [WD Proxy] Replacing sessionId 9D52CE1A-E753-4B90-B26F-CC883B3698C6 with 2b9fc047-301f-4b34-93fb-7eb2b186a4f4
+2020-05-09 23:20:42:491 [HTTP] <-- POST /wd/hub/session/2b9fc047-301f-4b34-93fb-7eb2b186a4f4/element/14000000-0000-0000-C60C-000000000000/click 200 450 ms - 65
+2020-05-09 23:20:42:491 [HTTP] 
+2020-05-09 23:20:52:500 [Appium] Received SIGTERM - shutting down
+2020-05-09 23:20:52:502 [Appium] Closing session, cause was 'The process has received SIGTERM signal'
+2020-05-09 23:20:52:502 [Appium] Removing session '2b9fc047-301f-4b34-93fb-7eb2b186a4f4' from our master session list
+2020-05-09 23:20:52:503 [DevCon Factory] Releasing connections for 0603b00b9e3260be7ff337c054ed519c30922993 device on any port number
+2020-05-09 23:20:52:504 [DevCon Factory] Found cached connections to release: ["0603b00b9e3260be7ff337c054ed519c30922993:8100"]
+2020-05-09 23:20:52:504 [DevCon Factory] Releasing the listener for '0603b00b9e3260be7ff337c054ed519c30922993:8100'
+2020-05-09 23:20:52:508 uncaughtException: write EPIPE
+Error: write EPIPE
+    at WriteWrap.afterWrite (net.js:788:14)

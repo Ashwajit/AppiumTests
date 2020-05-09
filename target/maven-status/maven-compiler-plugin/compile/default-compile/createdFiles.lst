@@ -1,4 +1,9 @@
-utilities/JavaUtilities.class
 base/BaseClass.class
 constants/Constants.class
 base/Server.class
+utilities/JavaUtilities.class
+utilities/jsonReader.class
+Screens/Screen.class
+utilities/ExtentUtility.class
+utilities/ScreenshotUtility.class
+Listeners/TestNGITestListener.class
