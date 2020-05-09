@@ -68,7 +68,7 @@ public class LoginTest extends BaseClass {
     // for mobile webbrowser - we can use tagname, CSSSelector, linktext, partiallinktext
 
     // used UiScrollable
-   // JavaUtilities.sleep(7);
+    JavaUtilities.sleep(10);
    // driver.findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(resourceId(\"com.ebay.mobile:id/ad_advertiser\"))"));
 
     mobileLibrary.setByWait(adv);

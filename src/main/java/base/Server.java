@@ -18,8 +18,8 @@ private static AppiumDriverLocalService appiumDriverLocalService;
 public static DesiredCapabilities desiredCap()
 {
   DesiredCapabilities caps = new DesiredCapabilities();
-  caps.setCapability(MobileCapabilityType.NO_RESET,true);
-  caps.setCapability(MobileCapabilityType.FULL_RESET,false);
+  //caps.setCapability(MobileCapabilityType.NO_RESET,false);
+  //caps.setCapability(MobileCapabilityType.FULL_RESET,true);
   //caps.setCapability(MobileCapabilityType.UDID,"emulator-5554");
   logger.info("UDID is set now");
   return caps;
