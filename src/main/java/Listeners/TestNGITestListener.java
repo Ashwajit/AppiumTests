@@ -9,7 +9,6 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
-import com.sun.tools.internal.ws.wsdl.document.Output;
 import io.appium.java_client.AppiumDriver;
 import java.io.File;
 import java.io.IOException;
