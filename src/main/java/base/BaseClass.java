@@ -65,6 +65,7 @@ public class BaseClass {
     //caps.setCapability(MobileCapabilityType.APP, "/Users/ashwajitthukral/AshwajitThukral/Tools/AshAppiumProjects/AndroidProjects/PassingAppiumDriver/data/ebay.apk");
     caps.setCapability(MobileCapabilityType.UDID,"0603b00b9e3260be7ff337c054ed519c30922993");
     caps.setCapability(IOSMobileCapabilityType.BUNDLE_ID,"com.cambly.Cambly");
+    caps.setCapability(AndroidMobileCapabilityType.IS_HEADLESS,true);
     //caps.setCapability("derivedDataPath","/Users/ashwajitthukral/Library/Developer/Xcode/DerivedData/WebDriverAgent-ciegwgvxzxdrqthilmrmczmqvrgu");
     caps.setCapability(IOSMobileCapabilityType.SHOW_XCODE_LOG,true);
     return caps;
